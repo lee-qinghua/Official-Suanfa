@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 public class 股票最大利润 {
     class Solution {

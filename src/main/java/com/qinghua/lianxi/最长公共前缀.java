@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 public class 最长公共前缀 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 public class 反转二叉树 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 //todo 未完成
 public class 最近最少使用 {

@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 public class 搜索矩阵 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 import java.util.HashMap;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package com.qinghua;
+package com.qinghua.lianxi;
 
 import java.util.ArrayList;
 import java.util.List;
