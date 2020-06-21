@@ -2,8 +2,21 @@ package com.qinghua.lianxi;
 
 public class 删除排序数组中的重复项 {
     public static void main(String[] args) {
+        //给定一个排序的数组  移除重复的元素 返回新数组的长度
         int[] arr = new int[]{1, 1, 2, 2, 3, 4, 5};
         System.out.println(removeDuplicates(arr));
+    }
+
+    public void method(int[] nums) {
+        //动态更新数组
+        int count = 0;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[count]) {
+                nums[count] = nums[i];
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 
 
