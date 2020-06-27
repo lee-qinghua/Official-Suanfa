@@ -4,6 +4,7 @@ public class Strstr {
     public static void main(String[] args) {
         String a = "abcdqwe";
         System.out.println(a.substring(0, 3));
+        System.out.println("test");
     }
 
     public int strStr(String haystack, String needle) {
