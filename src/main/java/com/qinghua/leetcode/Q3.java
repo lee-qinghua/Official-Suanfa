@@ -12,13 +12,3 @@ public class Q3 {
     }
 }
 
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        //暴力解法 每一个位置做第一个字母,分别和下面的字母组合
-        int max = 0;
-        int i = 0;
-        while (i < s.length()) {
-
-        }
-    }
-}
