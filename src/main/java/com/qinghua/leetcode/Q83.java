@@ -14,17 +14,15 @@ public class Q83 {
     }
 
     public ListNode deleteDuplicates(ListNode head) {
-        ArrayList<Integer> list = new ArrayList<>();
-        ListNode b = new ListNode(0);
-        ListNode a = head;
-        while (a != null) {
-            int value = a.val;
-            boolean flage = list.contains(value);
-            if (flage) {
-                a = a.next;
+        ListNode cur = head; //当前指针
+
+        while (cur != null && cur.next != null) {
+            if (cur.next.val == cur.val) {
+                cur.next = cur.next.next;
             } else {
-                b.next.val = value;
+                cur = cur.next;
             }
         }
+        return head;
     }
 }
