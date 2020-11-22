@@ -72,7 +72,6 @@ public class Q107 {
             }
             ret.add(0, list);
         }
-
         return ret;
     }
 
