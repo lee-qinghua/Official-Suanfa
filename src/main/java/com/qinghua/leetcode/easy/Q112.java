@@ -1,4 +1,4 @@
-package com.qinghua.leetcode;
+package com.qinghua.leetcode.easy;
 
 import java.util.ArrayList;
 import java.util.Collections;

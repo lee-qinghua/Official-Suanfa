@@ -1,4 +1,4 @@
-package com.qinghua.leetcode;
+package com.qinghua.leetcode.easy;
 
 import java.util.Stack;
 
@@ -14,27 +14,23 @@ import java.util.Stack;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class Q2 {
-    public static void main(String[] args) {
 
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
-}
 
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
-
-/**
- * 时间复杂度 max(两个列表的长度)
- * 空间复杂度 max(两个列表的长度)
- */
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    /**
+     * 时间复杂度 max(两个列表的长度)
+     * 空间复杂度 max(两个列表的长度)
+     */
+    class Solution {
+        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 //        ListNode dummyHead = new ListNode(0);
 //        ListNode p = l1, q = l2, curr = dummyHead;
 //        int carry = 0;
@@ -52,24 +48,25 @@ class Solution {
 //            curr.next = new ListNode(carry);
 //        }
 //        return dummyHead.next;
-        ListNode pre = new ListNode(0);
-        ListNode p = l1, q = l2, cur = pre;
-        int carry = 0;
-        while (p != null || q != null) {
-            int a = p == null ? 0 : p.val;
-            int b = q == null ? 0 : q.val;
-            int sum = a + b + carry;
-            carry = sum / 10;
-            int _now = sum % 10;
-            cur.next = new ListNode(_now);
-            cur = cur.next;
+            ListNode pre = new ListNode(0);
+            ListNode p = l1, q = l2, cur = pre;
+            int carry = 0;
+            while (p != null || q != null) {
+                int a = p == null ? 0 : p.val;
+                int b = q == null ? 0 : q.val;
+                int sum = a + b + carry;
+                carry = sum / 10;
+                int _now = sum % 10;
+                cur.next = new ListNode(_now);
+                cur = cur.next;
 
-            if (p != null) p = p.next;
-            if (q != null) q = q.next;
+                if (p != null) p = p.next;
+                if (q != null) q = q.next;
+            }
+            if (carry > 0) {
+                cur.next = new ListNode(carry);
+            }
+            return pre.next;
         }
-        if (carry > 0) {
-            cur.next = new ListNode(carry);
-        }
-        return pre.next;
     }
 }

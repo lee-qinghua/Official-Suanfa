@@ -1,4 +1,4 @@
-package com.qinghua.leetcode;
+package com.qinghua.leetcode.easy;
 
 public class Q121 {
     public int maxProfit(int[] prices) {

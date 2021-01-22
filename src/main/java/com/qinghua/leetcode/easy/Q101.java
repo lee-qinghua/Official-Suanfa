@@ -1,4 +1,4 @@
-package com.qinghua.leetcode;
+package com.qinghua.leetcode.easy;
 
 public class Q101 {
     public class TreeNode {

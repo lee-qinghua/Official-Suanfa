@@ -1,4 +1,4 @@
-package com.qinghua.leetcode;
+package com.qinghua.leetcode.easy;
 
 /**
  * 给定一个二叉树，找出其最大深度。 下面的深度为3

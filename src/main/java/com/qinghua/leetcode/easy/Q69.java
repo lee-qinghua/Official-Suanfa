@@ -1,4 +1,4 @@
-package com.qinghua.leetcode;
+package com.qinghua.leetcode.easy;
 
 import com.sun.org.apache.bcel.internal.util.BCELifier;
 
