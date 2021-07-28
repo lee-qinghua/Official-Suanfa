@@ -24,6 +24,7 @@ public class Q78 {
         for (int i = start; i < nums.length; i++) {
             path.add(nums[i]);
             dfs(nums, i + 1, path, res);
+            // 因为要回溯这里很重要，去除之前尝试的元素
             path.remove(path.size() - 1);
         }
     }
